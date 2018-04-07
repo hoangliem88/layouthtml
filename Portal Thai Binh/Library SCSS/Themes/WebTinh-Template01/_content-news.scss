@@ -24,6 +24,23 @@
 			}
 		}
 	}
+
+	.list-news-group{
+		.news-group-title{
+			h2{
+				font-size:1rem;
+				
+				&::before{
+					border-left:3px solid #005fab;
+					content :"";
+					margin-right: 10px;
+				}
+				a{
+color:#222;
+				}
+			}
+		}
+	}
 }
 
 .paginnation-style {
