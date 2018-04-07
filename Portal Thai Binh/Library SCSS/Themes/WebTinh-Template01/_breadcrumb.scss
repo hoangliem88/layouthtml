@@ -1,0 +1,17 @@
+.breadcrumb {
+    background: #fff;
+    padding: 0.75rem 0;
+    .breadcrumb-item {
+    	a{
+    		color:#222;
+    		font-weight:600;
+    	}
+        &:first-child {
+            &::before {
+                font-family: 'FontAwesome';
+                content: "\f015";
+                margin-right: 5px;
+            }
+        }
+    }
+}

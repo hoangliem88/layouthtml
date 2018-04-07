@@ -1,0 +1,32 @@
+@import "color-webtinh-template01";
+//Bootstrap
+
+@import "../../Plugin/bootstrap";
+
+//Animate CSS
+
+@import "../../Plugin/animate";
+
+//Font Awesome
+
+@import "../../Plugin/font-awesome";
+
+//Carousel
+
+@import "../../Plugin/carousel";
+
+
+//Scroolbar
+
+@import "../../Plugin/scrollbar";
+
+//Meanmenu
+@import "../../Plugin//meanmenu";
+
+.mean-container .mean-bar, .mean-container .mean-nav {
+	background: $bg-menu-color;
+}
+
+.mean-container .mean-nav ul li a.mean-expand{
+	padding: 9px !important;
+}

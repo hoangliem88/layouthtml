@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trang chủ</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/hover-min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/flatmenu-responsive.js"></script>
+    <script src="js/bootstrapvalidator.js"></script>
+
+</head>
+<body>
+    <div class="page">
+        <header class="header-site header-sticky header-left">
+            <div class="container clearfix">
+                <a class="logo" href="/" title="">
+                    <img src="images/logo.png" alt="" />
+                </a>
+                <nav class="menu">
+                    <div class="nav">
+                        <ul class="dropdown clear">
+                            <li><a href="/">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Kho giao diện</a></li>
+                            <li><a href="#">Khách hàng</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                        <a href="" class="responsive-nav" data-toggle="#off-canvas-right" data-toggle-class="open">
+                            <span class="l-menu"></span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="top-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>ĐĂNG KÝ WEBSITE</h1>
+                        <p class="desc">Thực hiện 3 bước đơn giản bên dưới để xây dựng website trường học nhanh chóng</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="box-dangky">
+            <div class="container">
+                <div class="row">                    
+                    <div class="col-md-12">
+                        <div id="next-breadcrumb">
+                            <ul>
+                                <li class='active'><a href='#'><span>Bước 1</span>CHỌN GIAO DIỆN</a></li>
+                                <li class="active"><a href='#' class="current"><span>Bước 2</span>NHẬP THÔNG TIN TRƯỜNG</a></li>
+                                <li><a href='#'><span>Bước 3</span>HOÀN THÀNH</a></li>
+                            </ul>
+                        </div>
+                        <div class="clear-10"></div><div class="clear-10"></div><div class="clear-10"></div><div class="clear-10"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <fieldset class="fs-content">
+                                    <legend class="tt">Thông tin đăng nhập</legend>
+                                    <div>
+                                        <div class="form-group">
+                                            <label>Email: <span class="required ">(*)</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Mật khẩu:<span class="required ">(*)</span></label>
+                                            <input type="password" class="form-control">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="fs-content">
+                                    <legend class="tt">Thông tin nhà trường</legend>
+                                    <div>
+                                        
+                                        <div class="form-group">
+                                            <label>Tỉnh/thành phố: <span class="required ">(*)</span></label>
+                                            <select class="form-control" id="sel1">
+                                                <option>Chọn Tỉnh/thành phố</option>
+                                                <option>TP.Hồ Chí Minh</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Quận/huyện: <span class="required ">(*)</span></label>
+                                            <select class="form-control" id="sel1">
+                                                <option>Chọn Quận/huyện</option>
+                                                <option>TP.Hồ Chí Minh</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Tên trường: <span class="required ">(*)</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Địa chỉ: <span class="required ">(*)</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email: <span class="required ">(*)</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Số điện thoại: <span class="required ">(*)</span></label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Tên miền website: <span class="required ">(*)</span></label>
+                                            <div class="input-group domain">
+                                                <input class="k-textbox k-input form-control" type="text" value="">
+                                                <span class="input-group-addon">.epmt.com.vn</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/bg-code.png" />
+                                <!--<fieldset class="fs-content">
+                                    <legend class="tt">Hướng dẫn tạo website</legend>
+                                    <div>
+                                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/vZAQdEcmooo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                                    </div>
+                                </fieldset>-->                                
+                            </div>
+                            <div class="clear-10"></div><div class="clear-10"></div>
+                            <div>
+                                <input type="submit" class="btnDangKy" value="Đăng ký" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear-10"></div><div class="clear-10"></div><div class="clear-10"></div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="logoFooter"></div>
+                    <div class="infoFooter">
+                        <h4> CÔNG TY TNHH TIẾN BỘ SÀI GÒN</h4>
+                        <p>
+                            Địa chỉ: Số 21 Lê Trung Nghĩa, Phường 12, Quận Tân Bình, Tp.Hồ Chí Minh
+                        </p>
+                        <p>
+                            Điện thoại: (028) 66797 357
+                        </p>
+                        <p>
+                            Email: sales@ascvn.com.vn
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>THỐNG KÊ TRUY CẬP</h4>
+                    <fieldset id="tbcounter">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td id="counter-1">
+                                        Đang online:
+                                    </td>
+                                    <td>
+                                        458
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="counter-2">
+                                        Hôm nay:
+                                    </td>
+                                    <td>
+                                        845
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="counter-3">
+                                        Hôm qua:
+                                    </td>
+                                    <td>
+                                        502
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td id="counter-8">
+                                        Tất cả:
+                                    </td>
+                                    <td>
+                                        2826920
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

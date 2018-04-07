@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HỆ THỐNG QUẢN LÝ GIÁO DỤC PMT-SCHOOL</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- <script type="text/javascript" src="js/error."></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+<style>
+   body {
+        font-family: font_new;
+        background: url(images/bg-5.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+</style>
+</head>
+
+<body>
+    <div class="pageframe">
+        <div id="middle" class="container">
+            <div class="logo">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="box-title-logo">
+                            <h2 class="text-1 animated fadeInRight">HỆ THỐNG QUẢN LÝ GIÁO DỤC </h2>
+                            <h2 class="text-2 animated fadeInRight">NGÀNH GIÁO DỤC VÀ ĐÀO TẠO</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="system-area">
+                <div class="metro-map animated2s bounceInUp">
+                    <a href="" class="image-link">
+                                    <img src="images/icon-map.png" alt="" class="image-primary" />
+                                    <img src="images/icon-metro-hv.png" alt="" class="image-hv">
+                                <h2 class="title-box map">Mạng Lưới <br>Trường lớp</h2>
+                            </a>
+                </div>
+                <div class="metro-ph animated2s bounceInLeft">
+                    <a href="" class="image-link">
+                               
+                                    <img src="images/icon-ph.png" alt="" class="image-primary" />
+                                    <img src="images/icon-metro-hv.png" alt="" class="image-hv">
+                                <h2 class="title-box ph">Cổng Phụ Huynh</h2>
+                               
+                            </a>
+                </div>
+                <div class="metro-system animated2s bounceInDown">
+                    <a href="" class="image-link" data-toggle="modal" data-target="#system">
+                               
+                                    <img src="images/icon-sys.png" alt="" class="image-primary" />
+                                    <img src="images/icon-metro-hv.png" alt="" class="image-hv">
+                                <h2 class="title-box sys">Trục Dữ Liệu</h2>
+                               
+                            </a>
+                </div>
+                <div class="metro-test animated2s bounceInRight">
+                    <a href="" class="image-link" data-toggle="modal" data-target="#testonline">
+                               
+                                    <img src="images/icon-test.png" alt="" class="image-primary" />
+                                    <img src="images/icon-metro-hv.png" alt="" class="image-hv">
+                                <h2 class="title-box test">Kiểm Tra <br> Kiến thức</h2>
+
+                            </a>
+                </div>
+                <div class="metro-check animated2s bounceInUp">
+                    <a href="" class="image-link" data-toggle="modal" data-target="#testonline">
+                               
+                                    <img src="images/icon-qa.png" alt="" class="image-primary" />
+                                    <img src="images/icon-metro-hv.png" alt="" class="image-hv">
+                                <h2 class="title-box check">Kiểm Định <br>Chất Lượng GD</h2>
+                               
+                            </a>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="testonline">
+            <div class="modal-dialog modal-sm ">
+                <div class="modal-content modal-bg">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Kiểm tra trực tuyến</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Mã Học Sinh" name="email" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Mật Môn Học" name="password" value="" type="password">
+                                </div>
+                                <input class="btn btn-lg btn-success btn-block" value="Đăng nhập" type="submit">
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End System -->
+        <div class="modal fade" id="system">
+            <div class="modal-dialog modal-sm ">
+                <div class="modal-content modal-bg">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Đăng nhập hệ thống</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input id="userid" class="form-control" placeholder="Tài Khoản" name="email" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <input id="password" class="form-control" placeholder="Mật khẩu" name="password" value="" type="password">
+                                </div>
+                                <input id="btnLoginHeThong" class="btn btn-lg btn-success btn-block" value="Đăng nhập" type="submit">
+                            </fieldset>
+                            <div class="message" id="message" style="color: darkred;">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

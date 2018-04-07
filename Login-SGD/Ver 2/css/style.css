@@ -1,0 +1,146 @@
+@font-face { font-family: 'Oswald'; src: url(../fonts/Oswald-Light.ttf); }
+body { margin: 0; padding: 0; background: url(../images/bg-color.png) no-repeat center center fixed; background-size: cover; font-family: "Helvetica Neue", Arial, sans-serif; color: white; }
+
+.boxImage-area { margin: auto; position: fixed; bottom: 0; z-index: 500; }
+
+@keyframes rect_clip { 0% { clip: rect(300px, 400px, 300px, 0px); }
+  25% { clip: rect(200px, 400px, 300px, 0px); }
+  50% { clip: rect(100px, 400px, 300px, 0px); }
+  75% { clip: rect(50px, 400px, 300px, 0px); }
+  100% { clip: rect(0px, 400px, 300px, 0px); } }
+.boxImage { width: 1000px; height: 600px; background: url(../images/bg.png) no-repeat; background-size: cover; position: relative; }
+.boxImage .arrow-pc { position: absolute; bottom: 21%; left: 28%; background: url(../images/arrow-bg.png) no-repeat; background-size: cover; width: 400px; height: 300px; z-index: 100; animation-name: rect_clip; animation-duration: 1s; animation-delay: 1s; }
+
+.boxImage img { float: left; }
+
+.image-link .image-hv { position: absolute; transition: 0.5s; opacity: 0; position: absolute; transform: scale(0.5); z-index: 300; }
+.image-link .title-box { position: absolute; transition: 1s; opacity: 0; transform: scale(0.5); font-size: 1.4rem; color: #fff; z-index: 400; text-align: center; }
+.image-link:hover .image-hv { opacity: 0.9; transform: scale(1); }
+.image-link:hover .title-box { opacity: 1; transform: scale(1); }
+
+.metro-map { position: absolute; top: 25.2%; left: 19%; z-index: 200; }
+.metro-map a { display: inline-block; cursor: pointer; }
+.metro-map .title-box { top: 29%; left: 7%; }
+.metro-map .image-hv { top: -13%; left: -14%; }
+
+.metro-ph { position: absolute; top: 4.5%; left: 32%; z-index: 200; }
+.metro-ph a { display: inline-block; cursor: pointer; }
+.metro-ph .title-box { top: 27%; left: 17%; }
+.metro-ph .image-hv { top: -10%; left: -10%; }
+
+.metro-system { position: absolute; bottom: 47.2%; left: 43.6%; z-index: 200; }
+.metro-system a { display: inline-block; cursor: pointer; }
+.metro-system .title-box { top: 40%; left: 12%; }
+.metro-system .image-hv { top: -13%; left: -14%; }
+
+.metro-test { position: absolute; bottom: 53%; left: 65%; z-index: 200; }
+.metro-test a { display: inline-block; cursor: pointer; }
+.metro-test .title-box { top: 32%; left: 20%; }
+.metro-test .image-hv { top: -13%; left: -14%; }
+
+.metro-check { position: absolute; bottom: 24.6%; right: 25.9%; z-index: 200; }
+.metro-check a { display: inline-block; cursor: pointer; }
+.metro-check .title-box { top: 26%; left: 0%; }
+.metro-check .image-hv { top: -13%; left: -14%; }
+
+.main-area { width: 80%; margin: auto; }
+.main-area .main-title { margin-top: 3rem; text-align: center; }
+.main-area .main-title h1 { color: white; font-size: 2.75rem; font-family: "Oswald"; font-weight: normal; text-transform: uppercase; }
+.main-area .main-title h1 br { margin: 0.5rem 0; }
+.main-area .main-title h2 { color: white; font-size: 1.75rem; font-family: "Oswald"; font-weight: normal; text-transform: uppercase; margin-top: 2rem; }
+.main-area .main-description { text-align: center; margin-top: 3rem; }
+.main-area .version { text-align: center; margin-top: 4rem; }
+.main-area .coppy-right { text-align: center; margin-top: 1.5rem; }
+.main-area .coppy-right a { color: white; }
+
+.modal-bg { background: url(../images/bg-trans.png); }
+.modal-bg h4 { color: #fff; font-weight: normal; text-align: center; }
+.modal-bg .close { color: #fff; }
+.modal-bg .close:focus, .modal-bg .close:hover { color: #fff; }
+.modal-bg .modal-header { border: none; }
+.modal-bg .modal-body { border: none; }
+.modal-bg .modal-footer { border: none; }
+.modal-bg .modal-footer .btn-secondary { background: #005377; border: none; cursor: pointer; }
+.modal-bg .modal-footer .btn-secondary:hover { background: #002f44; }
+
+.desktop { display: block; }
+
+.mobile { display: none; }
+
+.mobile-title-box { text-align: center; margin-top: 2rem; }
+
+h1.title-mobile { font-size: 2rem; font-family: "Oswald"; font-weight: normal; text-transform: uppercase; }
+
+h2.title-mobile { font-size: 1.5rem; font-family: "Oswald"; font-weight: normal; text-transform: uppercase; }
+
+.metro-icon-mobile { margin-top: 3rem; }
+
+.metro-mb { text-align: center; margin-bottom: 2rem; }
+.metro-mb a h2 { font-size: 1.25rem; }
+
+.coppyright-mb { margin-top: 3rem; text-align: center; }
+
+@media (max-width: 1200px) { .boxImage { width: 800px; height: 480px; }
+  .boxImage .arrow-pc { width: 320px; height: 240px; }
+  .boxImage .img-scale { transform: scale(0.8); }
+  .image-link .title-box { position: absolute; }
+  .image-link:hover .image-hv { transform: scale(0.8); }
+  .image-link:hover .title-box { transform: scale(0.8); }
+  .metro-map { top: 22.2%; left: 17%; }
+  .metro-ph { top: 1.5%; left: 31%; }
+  .metro-system { bottom: 44.2%; left: 41.6%; }
+  .metro-test { bottom: 49%; left: 63.7%; }
+  .metro-check { bottom: 21.6%; right: 24.1%; }
+  .main-area .main-title { margin-top: 3rem; } }
+@media (max-width: 992px) { .boxImage { width: 600px; height: 360px; }
+  .boxImage .arrow-pc { width: 240px; height: 180px; }
+  .boxImage .img-scale { transform: scale(0.6); }
+  .image-link .title-box { position: absolute; }
+  .image-link:hover .image-hv { transform: scale(0.6); }
+  .image-link:hover .title-box { transform: scale(0.6); }
+  .metro-map { top: 17%; left: 15%; }
+  .metro-ph { top: -3.9%; left: 27%; }
+  .metro-system { bottom: 39.2%; left: 37.6%; }
+  .metro-test { bottom: 43%; left: 60.7%; }
+  .metro-check { bottom: 15.6%; right: 21.1%; }
+  .main-area .main-title { margin-top: 3rem; text-align: center; }
+  .main-area .main-title h1 { color: white; font-size: 1.5rem; }
+  .main-area .main-title h1 br { margin: 0.5rem 0; }
+  .main-area .main-title h2 { font-size: 1rem; }
+  .main-area .main-description { margin-top: 2rem; }
+  .main-area .version { margin-top: 3rem; }
+  .main-area .coppy-right { margin-top: 1rem; } }
+@media (max-width: 768px) { .desktop { display: none; }
+  .mobile { display: block; } }
+/* Smoke container */
+#smoke { position: absolute; z-index: 3; width: 1px; height: 160px; left: 56.3%; bottom: 10%; }
+
+/* smoke balls */
+#smoke span { display: block; position: absolute; bottom: 10px; left: 50%; margin-left: -20px; height: 0px; width: 0px; border: 20px solid #fff; border-radius: 20px; left: -14px; opacity: 0; transform: scale(0.1); }
+
+/* Smoke animation */
+@keyframes smokeL { 0% { transform: scale(0.2) translate(0, 0); }
+  10% { opacity: 0.8; transform: scale(0.2) translate(0, -5px); }
+  100% { opacity: 0; transform: scale(1) translate(-10px, -60px); } }
+@keyframes smokeR { 0% { transform: scale(0.2) translate(0, 0); }
+  10% { opacity: 0.8; transform: scale(0.2) translate(0, -5px); }
+  100% { opacity: 0; transform: scale(1) translate(10px, -60px); } }
+#smoke .s0 { animation: smokeL 10s 0s infinite; }
+
+#smoke .s1 { animation: smokeR 10s 1s infinite; }
+
+#smoke .s2 { animation: smokeL 10s 2s infinite; }
+
+#smoke .s3 { animation: smokeR 10s 3s infinite; }
+
+#smoke .s4 { animation: smokeL 10s 4s infinite; }
+
+#smoke .s5 { animation: smokeR 10s 5s infinite; }
+
+#smoke .s6 { animation: smokeL 10s 6s infinite; }
+
+#smoke .s7 { animation: smokeR 10s 7s infinite; }
+
+#smoke .s8 { animation: smokeL 10s 8s infinite; }
+
+#smoke .s9 { animation: smokeR 10s 9s infinite; }

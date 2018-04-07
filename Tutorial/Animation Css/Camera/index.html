@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="camera">
+        <div class="strip">
+        </div>
+        <div class="lens">
+        </div>
+        <div class="led">
+        </div>
+        <div class="btn">
+        </div>
+    </div>
+    <div id="panel">
+        <div class="pic">
+            <img src="http://lorempixel.com/150/150/people" />
+        </div>
+        <center>
+            <a href="#" class="lnk">My Portfolio</a>
+        </center>
+    </div>
+    <div class="shadow">
+    </div>
+ 
+    <script>
+    $(function() {
+        $('.btn').click(function() {
+            $('body').hasClass('open') ? $('body').removeClass('open') : $('body').addClass('open')
+        })
+    })
+    //# sourceURL=pen.js
+    </script>
+</body>
+
+</html>
