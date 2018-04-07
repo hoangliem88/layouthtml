@@ -1,46 +1,70 @@
+.list-news-box {
+    .list-news-items {
+        overflow: hidden;
+        margin-bottom: 20px;
+        .items-images {
+            width: 35%;
+            float: left;
+            margin-right: 3%;
+        }
+        .items-content {
+            text-align: justify;
+            h3 {
+                font-size: 1rem;
+                font-weight: 600;
+                a {
+                    color: #005fab;
+                }
+            }
+            .desc {
+                p {}
+            }
+        }
+    }
 
-.list-news-box{
-	.list-news-items{
-		overflow: hidden;
-		margin-bottom: 20px;
-		.items-images{
-			width: 35%;
-			float:left;
-			margin-right: 3%;
-		}
-		.items-content{
-			text-align: justify;
-			h3{
-				font-size:1rem;
-				font-weight:600;
-				a{
-					color:#005fab;;
-				}
-			}
-			.desc{
-				p{
+    .list-news-group {
+        .news-group-title {
+            h2 {
+                font-size: 1rem;
 
-				}
-			}
-		}
-	}
+                &::before {
+                    border-left: 3px solid #005fab;
+                    content: "";
+                    margin-right: 10px;
+                }
+                a {
+                    color: #222;
+                }
+            }
+        }
+    }
+}
 
-	.list-news-group{
-		.news-group-title{
-			h2{
-				font-size:1rem;
-				
-				&::before{
-					border-left:3px solid #005fab;
-					content :"";
-					margin-right: 10px;
-				}
-				a{
-color:#222;
-				}
-			}
-		}
-	}
+.news-group-items {
+    margin-top: 20px;
+    overflow: hidden;
+    .group-item-root {
+        h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            a {
+                color: #005fab;
+            }
+        }
+        .item-root-image {
+            width: 40%;
+            float: left;
+            margin-right: 20px;
+        }
+        .item-root-content {
+            text-align: justify;
+            .item-date {
+                font-style: italic;
+                color: #808080;
+            }
+        }
+    }
 }
 
 .paginnation-style {
@@ -65,4 +89,3 @@ color:#222;
         }
     }
 }
-
