@@ -1,0 +1,124 @@
+@media (max-width: 1200px) {
+
+    .box-new-home {
+        .tab-content {
+            height: 221px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    header {
+        padding-top: 8px;
+    }
+    .logo-pc {
+        display: none;
+    }
+    .logo-tb {
+        display: block;
+    }
+    .menu-icon-area {
+        .menu-left {
+            padding-right: 0;
+        }
+        .menu-right {
+            padding-left: 0;
+        }
+    }
+    .menu-root {
+        .menu-left {
+            padding-right: 55px;
+        }
+        .menu-right {
+            padding-left: 55px;
+        }
+    }
+    .menu-top-header li {
+        margin-right: 10px;
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    .menu-inside .child a {
+        font-size: 0.825rem;
+    }
+    .top-header {
+        font-size: 0.825rem;
+    }
+    .box-menu-icon {
+        font-size: 0.825rem;
+        padding: 4px 0;
+    }
+    .box-new-home {
+        .tab-content {
+            height: 169px;
+        }
+    }
+    .nav-tabs .nav-link {
+        padding: 0.5rem;
+        font-size: 0.825rem;
+    }
+    .list-news-home {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-top: 4px;
+    }
+    .menu-top-header {
+        display: none
+    }
+
+    #dl-menu {
+        display: block;
+    }
+    .menu-root {
+        display: none
+    }
+    .logo-mb {
+        display: block;
+    }
+    .logo-tb {
+        display: none
+    }
+    .menu-icon-area {
+        .menu-left {
+            width: 100%;
+        }
+        .menu-right {
+            width: 100%;
+        }
+    }
+    .box-new-home {
+        .tab-content {
+            height: auto;
+            overflow-y: none;
+            border: 1px solid #dceafc
+        }
+    }
+
+    .nav-tabs .nav-link {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .main-content-home {
+        margin-top: 10px;
+        .col-md-8 {
+            padding-right: 15px
+        }
+        .col-md-4 {
+            padding-left: 15px
+        }
+    }
+    .box-new-home {
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 576px) {}
+
+@media (max-width: 320px) {}
