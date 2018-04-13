@@ -44,6 +44,7 @@
     margin-top: 20px;
     overflow: hidden;
     .group-item-root {
+        overflow: hidden;
         h3 {
             font-size: 1rem;
             font-weight: 600;
@@ -62,6 +63,31 @@
             .item-date {
                 font-style: italic;
                 color: #808080;
+            }
+        }
+    }
+
+    .group-item-child {
+        margin-top: 20px;
+        .item-child-list {
+            .item-root-image {
+                width:40%;
+                float:left;
+                margin-right: 10px;
+            }
+            .item-root-content {
+                text-align: justify;
+                h3{
+                    font-size:1rem;
+                    font-weight:600;
+                    a{
+                        color:#005fab;
+                    }
+                }
+                .item-date{
+                    font-style: italic;
+color: #808080;
+                }
             }
         }
     }

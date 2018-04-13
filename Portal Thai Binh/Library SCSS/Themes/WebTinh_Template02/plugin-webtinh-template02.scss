@@ -1,4 +1,4 @@
-@import "color-webtinh-template01";
+@import "color-webtinh-template02";
 //Bootstrap
 
 @import "../../Plugin/bootstrap";
@@ -21,7 +21,7 @@
 @import "../../Plugin/scrollbar";
 
 //Meanmenu
-@import "../../Plugin/meanmenu";
+@import "../../Plugin//meanmenu";
 
 .mean-container .mean-bar, .mean-container .mean-nav {
 	background: $bg-menu-color;
@@ -30,5 +30,3 @@
 .mean-container .mean-nav ul li a.mean-expand{
 	padding: 9px !important;
 }
-
-@import "../../Plugin/fancybox";

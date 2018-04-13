@@ -1,0 +1,36 @@
+.contact-box{
+
+}
+
+#contact-form {
+        margin-top: 30px;
+        input,
+        textarea {
+            background: #f1f1f1 none repeat scroll 0 0;
+            border: 0 none;
+            color: #777777;
+            font-size: 14px;
+            height: 48px;
+            margin-bottom: 23px;
+            padding: 0 23px;
+            width: 100%;
+        }
+        textarea {
+            height: 150px;
+            padding-top: 13px;
+            resize: none;
+        }
+        .button-default {
+            border: 0 none;
+            padding: 8px 40px;
+            -webkit-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            &:hover {
+                background: $bg-menu-color none repeat scroll 0 0;
+                color:#ffffff;
+            }
+        }
+    }
