@@ -79,7 +79,6 @@ body {
                 color: $text-menu-color;
                 font-size: 0.875rem;
                 padding: 0.5rem 1rem;
-             
             }
             &:first-child {
                 a {
@@ -93,13 +92,13 @@ body {
         }
     }
     .dropmenu {
-          a {
-                    &::before {
-                      
-                        content: "" !important;
-                        margin-right: 0px !important;
-                    }
-                }
+        a {
+            &::before {
+
+                content: "" !important;
+                margin-right: 0px !important;
+            }
+        }
         .drop-link {
             &::after {
                 display: inline-block;
@@ -233,7 +232,7 @@ body {
 
 .input-search {
     position: relative;
-    input[type=text]{
+    input[type=text] {
         padding: 0.275rem 0.75rem;
     }
     .btnSearch {
@@ -247,6 +246,7 @@ body {
 }
 
 .section-box {
+    margin-bottom: 20px;
     .section-box-tilte {
 
         h2 {
@@ -260,26 +260,76 @@ body {
     .section-box-con {
 
         padding: 0.5rem;
-        border:1px solid #e1e1e1;
+        border: 1px solid #e1e1e1;
         overflow: hidden;
     }
 }
-.newstop-area{
-    .item-new-root{
+
+.newstop-area {
+    .item-new-root {
         width: 60%;
-        float:left;
-        margin-right: 2%;
-        .item-new-image{
+        float: left;
+        margin-right: 3%;
+        .item-new-image {}
+        .item-new-content {
+            text-align: justify;
+            h2 {
+                font-size: 0.825rem;
+                margin-top: 0.5rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                a {
+                    color: #4B77BE;
+                }
+            }
+        }
+    }
+    .item-new-child {
+        overflow: hidden;
+        .item-list {
+            margin: 0;
+            padding: 0;
+            text-align: justify;
+            border-bottom: 1px dotted #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            &:last-child{
+                  border-bottom: none;
+            }
+            a {
+                color: #4B77BE;
+                font-weight: 600;
+            }
 
         }
-        .item-new-content{
-            
-        }
-    }
-    .item-new-child{
-        
     }
 }
+
+.list-new-single{
+    overflow: hidden;
+    margin-bottom: 20px;
+    .list-new-images{
+        width: 30%;
+        margin-right: 10px;
+        float:left;
+    }
+    .list-new-content{
+        overflow: hidden;
+        h3{
+            font-size: 0.825rem;
+                margin-top: 0;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                a {
+                    color: #4B77BE;
+                }
+        }
+        .list-new-date{
+            margin-bottom: 5px;
+        }
+    }
+}
+
 footer {
     padding: 50px 0;
 }
